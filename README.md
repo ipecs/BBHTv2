@@ -37,15 +37,9 @@ Script for aliases/shell functions: [https://github.com/unethicalnoob/aliases](h
 
 
 ``` 
- git clone https://github.com/unethicalnoob/BBHTv2 
+ git clone https://github.com/ipecs/BBHTv2
  cd BBHTv2
  chmod +x bbhtv2.1.sh
  ./bbhtv2.1.sh
  ```
 
-## Instructions
-
-``` 
-docker pull unethicalnoob/bbht:v2
-docker run -it  unethicalnoob/bbht:v2 /bin/bash
- ```

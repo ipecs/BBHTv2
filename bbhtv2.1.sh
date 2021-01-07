@@ -104,49 +104,12 @@ go get -u github.com/harleo/knockknock
 go get -u github.com/tomnomnom/assetfinder
 sudo pip3 install spyse.py
 
-subscraper(){
-git clone https://github.com/m8r0wn/subscraper ~/tools/subscraper
-cd ~/tools/subscraper
-sudo python3 setup.py install
-}
-subscraper
-
-subdomainizer(){
-git clone https://github.com/nsonaniya2010/SubDomainizer.git ~/tools/SubDomainizer
-cd ~/tools/SubDomainizer && chmod +x SubDomainizer.py
-sudo pip3 install -r requirements.txt
-}
-subdomainizer
 
 crtsh(){
 git clone https://github.com/YashGoti/crtsh.py ~/tools/crtsh.py
 cd ~/tools/crtsh.py && sudo pip3 install -r requirements.txt
 }
 crtsh
-
-sublert(){
-git clone https://github.com/yassineaboukir/sublert.git ~/tools/sublert
-sudo pip3 install virtualenv setuptools
-virtualenv sublert
-source sublert/bin/activate
-cd ~/tools/sublert
-sudo pip3 install -r requirements.txt
-}
-sublert
-
-subsh(){
-git clone https://github.com/cihanmehmet/sub.sh.git ~/tools/subsh
-cd ~/tools/subsh && chmod +x sub.sh
-}
-subsh
-
-OneforAll(){
-git clone https://github.com/shmilylty/OneForAll.git ~/tools/OneForAll
-cd ~/tools/OneForAll
-sudo python3 -m pip install -U pip3 setuptools wheel -i https://mirrors.aliyun.com/pypi/simple/
-sudo pip3 install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
-}
-OneForAll
 
 shosubgo(){
 git clone https://github.com/incogbyte/shosubgo.git ~/tools/shosubgo
@@ -209,20 +172,6 @@ knockpy
 echo "${BLUE} Done ${RESET}"
 echo ""
 
-
-echo "${GREEN} [+] Installing Subdomain Takeover tools ${RESET}"
-{
-go get -u github.com/Ice3man543/SubOver
-pip3 install autosubtakeover
-git clone https://github.com/antichown/subdomain-takeover.git ~/tools/STO
-go get -u github.com/anshumanbh/tko-subs
-go get -u github.com/haccer/subjack
-} > /dev/null 2>&1
-echo "${BLUE} Done ${RESET}"
-echo ""
-
-
-
 echo "${GREEN} [+] Installing Cloud workflow Tools ${RESET}"
 {
 gem install aws_recon
@@ -235,44 +184,12 @@ git clone https://github.com/fellchase/flumberboozle ~/tools/flumberboozle
 git clone https://github.com/appsecco/spaces-finder.git ~/tools/spaces-finder
 pip3 install festin
 
-slurp(){
-git clone https://github.com/avineshwar/slurp.git ~/tools/slurp
-cd ~/tools/slurp
-go build main.go && mv main slurp
-}
-slurp
-
-cloud_enum(){
-git clone https://github.com/initstring/cloud_enum.git ~/tools/cloud_enum
-cd ~/tools/cloud_enum && pip3 install -r requirements.txt
-}
-cloud_enum
-
-S3Scanner(){
-git clone https://github.com/sa7mon/S3Scanner.git ~/tools/S3Scanner
-cd ~/tools/S3Scanner
-sudo pip3 install -r requirements.txt
-}
-S3Scanner
-
 cloudflair(){
 git clone https://github.com/christophetd/CloudFlair.git ~/tools/CloudFlair
 cd ~/tools/CloudFlair && chmod +x cloudflair.py
 sudo pip3 install -r requirements.txt
 }
 cloudflair
-
-
-GCPBucketBrute(){
-git clone https://github.com/RhinoSecurityLabs/GCPBucketBrute.git ~/tools/GCPBucketBrute
-cd ~/tools/GCPBucketBrute
-sudo python3 -m pip install -r requirements.txt
-}
-GCPBucketBrute
-} > /dev/null 2>&1
-echo "${BLUE} Done ${RESET}"
-echo ""
-
 
 echo "${GREEN} [+] Installing Fuzzing tools ${RESET}"
 {
@@ -296,16 +213,6 @@ secretfinder
 echo "${BLUE} Done ${RESET}"
 echo ""
 
-echo "${GREEN} [+] Visual Inspection tools ${RESET}"
-{
-go get -u github.com/michenriksen/aquatone
-go get -u github.com/sensepost/gowitness
-go get -u github.com/tomnomnom/concurl
-git clone https://github.com/FortyNorthSecurity/EyeWitness.git ~/tools/EyeWitness
-git clone https://github.com/breenmachine/httpscreenshot.git ~/tools/httpscreenshot
-} > /dev/null
-echo "${BLUE} Done ${RESET}"
-echo ""
 
 echo "${GREEN} [+] Content Discovery tools ${RESET}"
 {
@@ -313,13 +220,6 @@ go get -u github.com/jaeles-project/gospider
 pip3 install scrapy
 go get -u github.com/m4ll0k/Aron
 git clone https://github.com/s0md3v/Arjun.git ~/tools/Arjun
-
-
-photon(){
-git clone https://github.com/s0md3v/Photon.git ~/tools/Photon
-cd ~/tools/Photon
-sudo pip3 install -r requirements.txt
-}
 
 paramspider(){
 git clone https://github.com/devanshbatham/ParamSpider ~/tools/ParamSpider
@@ -383,76 +283,6 @@ echo "${GREEN} [+] Downloading Git tools ${RESET}"
 {
 go get -u github.com/eth0izzle/shhgit
 pip3 install truffleHog
-
-gitscanner(){
-git clone https://github.com/HightechSec/git-scanner ~/tools/GIT/git-scanner
-cd ~/tools/GIT/git-scanner && chmod +x gitscanner.sh
-}
-gitscanner
-
-gitgraber(){
-git clone https://github.com/hisxo/gitGraber.git ~/tools/GIT/gitGraber
-cd ~/tools/GIT/gitGraber && chmod +x gitGraber.py
-sudo pip3 install -r requirements.txt
-}
-gitgraber
-
-githound(){
-git clone https://github.com/tillson/git-hound.git ~/tools/GIT/git-hound
-cd ~/tools/GIT/git-hound
-sudo go build main.go && mv main githound
-}
-githound
-
-gitsearch(){
-git clone https://github.com/gwen001/github-search.git ~/tools/GIT/github-search
-cd ~/tools/GIT/github-search
-sudo pip3 install -r  requirements3.txt
-}
-gitsearch
-} > /dev/null 2>&1
-echo "${BLUE} Done ${RESET}"
-echo ""
-
-
-echo "${GREEN} [+] Downloading Frameworks ${RESET}"
-{
-git clone https://github.com/1N3/Sn1per.git ~/tools/Frameworks/Sn1per
-git clone https://github.com/j3ssie/Osmedeus.git ~/tools/Frameworks/osmedeus
-git clone https://github.com/WhaleShark-Team/cobra.git ~/tools/Frameworks/Cobra
-git clone https://github.com/0xinfection/tidos-framework.git ~/tools/Frameworks/TIDoS-Framework
-git clone https://github.com/m4ll0k/WAScan.git ~/tools/Frameworks/WAScan
-git clone https://github.com/1N3/BlackWidow.git ~/tools/Frameworks/BlackWidow
-git clone --recursive https://github.com/screetsec/Sudomy.git ~/tools/Frameworks/Sudomy
-git clone https://github.com/dwisiswant0/scant3r.git ~/tools/Frameworks/scant3r
-} > /dev/null 2>&1
-echo "${BLUE} Done ${RESET}"
-echo ""
-
-
-echo "${GREEN} [+] JS Enum Tools ${RESET}"
-{
-go get github.com/003random/getJS
-go get -u github.com/lc/subjs
-git clone https://github.com/dark-warlord14/JSScanner.git ~/tools/JSScanner
-git clone https://github.com/zseano/JS-Scan.git ~/tools/JS-Scan
-git clone https://github.com/robre/scripthunter.git ~/tools/jshunter
-
-JSParser(){
-git clone https://github.com/nahamsec/JSParser.git ~/tools/JSParser
-cd ~/tools/JSParser
-sudo python3 setup.py install
-}
-
-LinkFinder(){
-git clone https://github.com/GerbenJavado/LinkFinder.git ~/tools/LinkFinder
-cd ~/tools/LinkFinder
-sudo pip3 install -r requirements.txt
-sudo python3 setup.py install
-}
-} > /dev/null 2>&1
-echo "${BLUE} Done ${RESET}"
-echo ""
 
 echo "${GREEN} [+] Fingerprinting & CVE tools ${RESET}"
 {
